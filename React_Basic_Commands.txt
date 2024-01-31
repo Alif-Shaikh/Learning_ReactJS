@@ -1,0 +1,40 @@
+node -v
+npm -v
+
+=>In case you might have an old (global) installation of npm which causes the issue. As of 12/19, npm does not support global installations.
+
+First, uninstall the package using:
+npm uninstall -g create-react-app
+
+Some osx/Linux users may need to also remove the old npm using:
+rm -rf /usr/local/bin/create-react-app
+
+This is now the only supported method for generating a project:
+npx create-react-app my-app
+
+Finally you can run:
+npm start
+---------------------------------------------------------------------
+to kill the port=>    npx kill-port 3000
+--------------------- -----------------------------------------------------
+npm i     //to get node modules
+-------------------------------------------------
+rafce =>readymade func component
+-------------------------------------------------------
+in case of below error=>
+
+$ git push origin master
+To https://github.com/Alif-Shaikh/Learning_ReactJS.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/Alif-Shaikh/Learning_Reac
+tJS.git'
+
+
+use=>
+git pull --rebase origin master
+git push -u origin master
+-----------------------------------------------------------------------------
+[ERR_PACKAGE_PATH_NOT_EXPORTED]: No 'exports'
+
+npm update
+npm audit fix --force
