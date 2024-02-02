@@ -6,13 +6,13 @@ import { Link } from 'react-router-dom';
 function NavbarComponent(props) {
     // function NavbarComponent({title}) {
   return (
-    <Navbar expand="lg" classNameName="bg-info text-white">
+    <Navbar expand="lg" className="bg-info text-white">
       <Container>
         <Navbar.Brand href="#home">{props.title}</Navbar.Brand> 
         {/* <Navbar.Brand href="#home">{title}</Navbar.Brand>   */}
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav classNameName="me-auto">
+          <Nav className="me-auto">
             <Link to="/">
             <Nav.Link href="#home">Home</Nav.Link>
             </Link>
